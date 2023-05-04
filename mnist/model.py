@@ -67,7 +67,7 @@ class BatchNet(nn.Module):
 
 # 卷积神经网络
 class CNN(nn.Module):
-    def __init__(self, in_dim, n_hidden_1, n_hidden_2, out_dim):
+    def __init__(self):
         super(CNN, self).__init__()
         self.layer1 = nn.Sequential(
             nn.Conv2d(1, 16, kernel_size=3),
